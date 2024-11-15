@@ -1,0 +1,552 @@
+:root {
+    --green-dark: #3f4402;
+    --green-light: #b2c302;
+    --night: #433899;
+    --day: ;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #0E0A2C;
+}
+
+.main {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tama-construction {
+    width: 305px;
+    height: 381px;
+    background: #0044ff;
+    border-radius: 100%;
+    padding: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px 0px 100px #433899;
+}
+
+.tama-title {
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+}
+
+.tama-title h1 {
+    font-family: "Freckle Face", system-ui;
+    color: #ff0080;
+}
+
+.tama-main-content {
+    height: 175px;
+    width: 175px;
+    background: var(--green-light);
+    display: grid;
+    border-radius: 9px;
+    position: relative;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+
+.tama-buttons button {
+    border: none;
+    background: none;
+    font-size: 20px;
+    margin: 0px 10px;
+    cursor: pointer;
+    border-radius: 100%;
+    transition: transform 0.1s;
+}
+
+.tama-buttons button:active {
+    transform: translateY(1px);
+
+}
+
+/* Stats */
+
+.main-content-stats {
+    padding: 5px 1px;
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    overflow-y: auto;
+    max-height: 300px; 
+    scrollbar-width: none;
+}
+
+.main-content-stats-temp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-shrink: 0;
+    font-family: "Press Start 2P", system-ui;
+}
+
+.main-content-stats-temp h2 {
+    color: var(--green-dark);
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.main-content-stats-temp p {
+    color: var(--green-dark);
+    font-size: 9px;
+    margin-top: 5px;
+}
+
+.main-content-stats-temp h3 {
+    color: var(--green-dark);
+    font-size: 20px;
+    margin-top: 5px;
+    margin-right: -18px;
+}
+
+
+
+.main-content-stats-condition {
+    height: 60px;
+    width: 160px;
+    background: var(--green-dark);
+    border-radius: 5px;
+    font-family: "Press Start 2P", system-ui;
+    padding: 0px 5px;
+    flex-shrink: 0;
+    margin: 5px 0px 0px;
+}
+
+.main-content-stats-condition h3 {
+    font-size: 7px;
+    font-weight: lighter;
+    font-style: normal;
+    margin: 5px 0px;
+    color: #fbffcc;
+}
+
+.main-content-stats-condition h4 {
+    font-size: 11px;
+    color: #fbffcc;
+    font-weight: lighter;
+    font-style: normal;
+    margin-top: 10px;
+}
+
+
+.main-content-stats-wind-humidity {
+    display: flex;
+    justify-content: space-around;
+    width: 160px;
+}
+
+.main-content-stats-humidity {
+    height: 60px;
+    width: 78px;
+    background: var(--green-dark);
+    border-radius: 5px;
+    font-family: "Press Start 2P", system-ui;
+    padding: 0px 5px;
+    flex-shrink: 0;
+    margin: 5px 0px 0px;
+}
+
+.main-content-stats-humidity h3 {
+    font-size: 7px;
+    font-weight: lighter;
+    font-style: normal;
+    margin: 5px 0px;
+    color: #fbffcc;
+}
+
+.main-content-stats-humidity h4 {
+    font-size: 14px;
+    color: #fbffcc;
+    font-weight: lighter;
+    font-style: normal;
+    margin-top: 10px;
+}
+
+.main-content-stats-humidity h5{
+    font-size: 10px;
+    color: #fbffcc;
+    font-weight: lighter;
+    font-style: normal;
+    margin-top: 5px;
+}
+
+.main-content-stats-wind {
+    height: 60px;
+    width: 78px;
+    background: var(--green-dark);
+    border-radius: 5px;
+    font-family: "Press Start 2P", system-ui;
+    padding: 0px 5px;
+    flex-shrink: 0;
+    margin: 5px 0px 0px;
+}
+
+.main-content-stats-wind h3 {
+    font-size: 7px;
+    font-weight: lighter;
+    font-style: normal;
+    margin: 5px 0px;
+    color: #fbffcc;
+}
+
+.main-content-stats-wind h4 {
+    font-size: 14px;
+    color: #fbffcc;
+    font-weight: lighter;
+    font-style: normal;
+    margin-top: 10px;
+}
+.main-content-stats-wind h5{
+    font-size: 10px;
+    color: #fbffcc;
+    font-weight: lighter;
+    font-style: normal;
+    margin-top: 5px;
+}
+
+.main-content-stats-pressure {
+    height: 60px;
+    width: 160px;
+    background: var(--green-dark);
+    border-radius: 5px;
+    font-family: "Press Start 2P", system-ui;
+    padding: 0px 5px;
+    flex-shrink: 0;
+    margin: 5px 0px 0px;
+}
+
+.main-content-stats-pressure h3 {
+    font-size: 7px;
+    font-weight: lighter;
+    font-style: normal;
+    margin: 5px 0px;
+    color: #fbffcc;
+}
+
+.main-content-stats-pressure h4 {
+    font-size: 14px;
+    color: #fbffcc;
+    font-weight: lighter;
+    font-style: normal;
+    margin-top: 10px;
+}
+.main-content-stats-pressure h5{
+    font-size: 10px;
+    color: #fbffcc;
+    font-weight: lighter;
+    font-style: normal;
+    margin-top: 5px;
+}
+
+.main-content-stats-uv-Rainfall {
+    display: flex;
+    justify-content: space-around;
+    width: 160px;
+}
+
+.main-content-stats-uv {
+    height: 60px;
+    width: 78px;
+    background: var(--green-dark);
+    border-radius: 5px;
+    font-family: "Press Start 2P", system-ui;
+    padding: 0px 5px;
+    flex-shrink: 0;
+    margin: 5px 0px 0px;
+}
+
+.main-content-stats-uv h3 {
+    font-size: 7px;
+    font-weight: lighter;
+    font-style: normal;
+    margin: 5px 0px;
+    color: #fbffcc;
+}
+
+.main-content-stats-uv h4 {
+    font-size: 14px;
+    color: #fbffcc;
+    font-weight: lighter;
+    font-style: normal;
+    margin-top: 10px;
+    display: flex;
+}
+
+.main-content-stats-uv h5 {
+    font-size: 7px;
+    color: #fbffcc;
+    font-weight: lighter;
+    font-style: normal;
+    margin-top: 5px;
+}
+
+.main-content-stats-Rainfall {
+    height: 60px;
+    width: 78px;
+    background: var(--green-dark);
+    border-radius: 5px;
+    font-family: "Press Start 2P", system-ui;
+    padding: 0px 5px;
+    flex-shrink: 0;
+    margin: 5px 0px 0px;
+}
+
+.main-content-stats-Rainfall h3 {
+    font-size: 7px;
+    font-weight: lighter;
+    font-style: normal;
+    margin: 5px 0px;
+    color: #fbffcc;
+}
+
+.main-content-stats-Rainfall h4 {
+    font-size: 14px;
+    color: #fbffcc;
+    font-weight: lighter;
+    font-style: normal;
+    margin-top: 10px;
+}
+.main-content-stats-Rainfall h5{
+    font-size: 10px;
+    color: #fbffcc;
+    font-weight: lighter;
+    font-style: normal;
+    margin-top: 5px;
+}
+
+
+.main-content-stats-hl-altitude{
+    display: flex;
+    justify-content: space-around;
+    width: 160px;
+}
+
+.main-content-stats-hl {
+    height: 60px;
+    width: 78px;
+    background: var(--green-dark);
+    border-radius: 5px;
+    font-family: "Press Start 2P", system-ui;
+    padding: 0px 5px;
+    flex-shrink: 0;
+    margin: 5px 0px 0px;
+}
+
+.main-content-stats-hl-flex{
+    display: grid;
+}
+
+.main-content-stats-hl h3 {
+    font-size: 7px;
+    font-weight: lighter;
+    font-style: normal;
+    margin: 5px 0px;
+    color: #fbffcc;
+}
+
+.main-content-stats-hl h4 {
+    font-size: 8px;
+    color: #fbffcc;
+    font-weight: lighter;
+    font-style: normal;
+    display: flex;
+    margin-top: 5px;
+}
+
+.main-content-stats-altitude {
+    height: 60px;
+    width: 78px;
+    background: var(--green-dark);
+    border-radius: 5px;
+    font-family: "Press Start 2P", system-ui;
+    padding: 0px 5px;
+    flex-shrink: 0;
+    margin: 5px 0px 0px;
+}
+
+.main-content-stats-altitude h3 {
+    font-size: 7px;
+    font-weight: lighter;
+    font-style: normal;
+    margin: 5px 0px;
+    color: #fbffcc;
+}
+
+.main-content-stats-altitude h4 {
+    font-size: 11px;
+    color: #fbffcc;
+    font-weight: lighter;
+    font-style: normal;
+    display: flex;
+    margin-top: 10px;
+}
+
+.main-content-stats-altitude h5 {
+    font-size: 7px;
+    color: #fbffcc;
+    font-weight: lighter;
+    font-style: normal;
+    margin-top: 5px;
+    margin-left: 1.5px;
+}
+
+.main-content-stats-sas {
+    height: 60px;
+    width: 160px;
+    background: var(--green-dark);
+    border-radius: 5px;
+    font-family: "Press Start 2P", system-ui;
+    padding: 0px 5px;
+    flex-shrink: 0;
+    margin: 5px 0px 0px;
+}
+
+.main-content-stats-sas h3 {
+    font-size: 7px;
+    font-weight: lighter;
+    font-style: normal;
+    margin: 5px 0px;
+    color: #fbffcc;
+}
+
+.main-content-stats-sas h4 {
+    font-size: 15px;
+    color: #fbffcc;
+    font-weight: lighter;
+    font-style: normal;
+    margin-top: 5px;
+    display: flex;
+
+}
+
+.main-content-stats-sas img{
+    height: 15px;
+    width: auto;
+    margin-right: 10px;
+}
+
+.api-shoutout a{
+    color: var(--green-dark);
+    font-size: 6px;
+    text-decoration: none;
+    font-family: "Press Start 2P", system-ui;
+}
+.api-shoutout:hover{
+    text-decoration: underline;
+}
+
+/* main */
+
+.main-content-main{
+    font-family: "Press Start 2P", system-ui;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.main-content-main-top{
+    display: flex;
+    justify-content: space-around;
+}
+
+.main-content-main-top-location, .main-content-main-top-time{
+    margin-top: 4px;
+    font-size: 7.6px;
+    font-style: lighter;
+
+}
+
+.main-content-main-top-location p, .main-content-main-top-time p{
+    color: var(--green-dark);
+}
+
+
+.main-content-main-bottom{
+    display: flex;
+    justify-content: space-around;
+}
+
+.main-content-main-bottom-lowest, .main-content-main-bottom-temp, .main-content-main-bottom-highest{
+    margin-top: 4px;
+    font-size: 7.6px;
+    font-style: lighter;
+
+}
+
+.main-content-main-bottom-lowest p, .main-content-main-bottom-temp p, .main-content-main-bottom-highest p{
+    color: var(--green-dark);
+}
+
+
+.main-content-main-canvas{
+    height: 87.5px;
+    width: 175px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #7b8601;
+    z-index: 0;
+}
+
+
+.main-content-footer{
+    font-family: "Press Start 2P", system-ui;
+    padding: 10px 5px;
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    overflow-y: auto;
+    max-height: 300px; 
+    scrollbar-width: none;
+    font-size: 9px;
+    line-height: 1.5;
+    color: var(--green-dark);
+    text-align: center;
+}
+
+.main-content-footer-top a{
+    color: var(--green-dark);
+}
+
+.main-content-footer-credits{
+    text-align: center;
+    margin: 15px 0px;
+}
+.main-content-footer-credits a{
+    color: var(--green-dark);
+}
+
+.main-content-footer-pp, .main-content-footer-tos{
+    margin: 3px 0px;
+}
+.main-content-footer-pp:hover, .main-content-footer-tos:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.main-content-footer-project{
+    margin: 15px 0px;
+}
+.main-content-footer-project a{
+    color: var(--green-dark);
+}
+
+
+.main-content-main-canvas img{
+    height: 40px;
+    width: auto;
+}

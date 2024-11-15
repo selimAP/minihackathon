@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEATHERGOTCHI | Your weather tamagotchi</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/TG-logo-transp.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Freckle+Face&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main">
+        <div class="tama-construction">
+            <div class="tama-title">
+                <h1>WEATHERGOTCHI</h1>
+            </div>
+            <div class="tama-main-content">
+
+                <div id="main-content-stats-id" class="main-content-stats">
+                    <div class="main-content-stats-temp">
+                        <h2>LOCATION</h2>
+                        <p></p>
+                        <h3>00°</h3>
+                    </div>
+
+                    <div class="main-content-stats-condition">
+                        <h3>CONDITION</h3>
+                        <h4>condition</h4>
+                    </div>
+
+                    <div class="main-content-stats-wind-humidity">
+                        <div class="main-content-stats-humidity">
+                            <h3>HUMIDITY</h3>
+                            <h4>0%</h4>
+                            <h5>max.</h5>
+                        </div>
+
+                        <div class="main-content-stats-wind">
+                            <h3>WIND</h3>
+                            <h4>00</h4>
+                            <h5>km/h</h5>
+                        </div>
+                    </div>
+
+                    <div class="main-content-stats-pressure">
+                        <h3>PRESSURE</h3>
+                        <h4>0.000</h4>
+                        <h5>hPa</h5>
+                    </div>
+
+                    <div class="main-content-stats-uv-Rainfall">
+                        <div class="main-content-stats-uv">
+                            <h3>UV-INDEX</h3>
+                            <h4>00</h4>
+                            <h5>HIGH</h5>
+                        </div>
+    
+                        <div class="main-content-stats-uv">
+                            <h3>RAINFALL</h3>
+                            <h4>0 <p>mm</p></h4>
+                            <h5>In the next 24h.</h5>
+                        </div>
+                    </div>
+
+                    <div class="main-content-stats-hl-altitude">
+                        <div class="main-content-stats-hl">
+                            <h3>LOW/HIGH TEMP</h3>
+                            <div class="main-content-stats-hl-flex">
+                                <h4><p>L:</p> 00°</h4>
+                                <h4><p>H:</p> 00°</h4>
+                            </div>
+                        </div>
+    
+                        <div class="main-content-stats-altitude">
+                            <h3>ALTITUDE</h3>
+                            <h4>0.000</h4>
+                            <h5>m</h5>
+                        </div>
+                    </div>
+
+                    <div class="main-content-stats-sas">
+                        <h3>SUNRISE/SUNSET</h3>
+                        <h4><img src="images/sunrise-icon.png" alt="sunrise"> 05:20</h4>
+                        <h4><img src="images/sunset-icon.png" alt="sunset"> 21:20</h4>
+                    </div>
+                    
+                    <div class="api-shoutout">
+                        <a target="_blank" href="https://open-meteo.com/">Data from open-meteo.com</a>
+                    </div>
+                </div>
+
+
+                <div id="main-content-main-id" class="main-content-main">
+                    <div class="main-content-main-top">
+                        <div class="main-content-main-top-location">
+                            <p>Location</p>
+                        </div>
+
+                        <div class="main-content-main-top-time">
+                            <p>00:00</p>
+                        </div>
+                    </div>
+
+                    <div id="main-content-main-canvas-id" class="main-content-main-canvas">
+                        <img src="images/lion-1.png" alt="">
+                    </div>
+
+                    <div id="main-content-main-bottom-id" class="main-content-main-bottom">
+                        <div class="main-content-main-bottom-lowest">
+                            <p>L:16°</p>
+                        </div>
+                        <div class="main-content-main-bottom-temp">
+                            <p>23°</p>
+                        </div>
+                        <div class="main-content-main-bottom-highest">
+                            <p>H:32°</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="main-content-footer">
+                    <div class="main-content-footer-top">
+                        <p>Thank you for visiting WEATHERGOTCHI! <br><br>
+                            This project was created at the <a target="_blank" href="https://minihackathon.de/">minihackathon by Kevin Chromik.</a> <br><br></p>
+                    </div>
+                    <div class="main-content-footer-credits">
+                        <a target="_blank" href="https://github.com/selimAP">Built and designed by selimAP.</a>
+                    </div>
+
+                    <div class="main-content-footer-project">
+                        <a target="_blank" href="https://github.com/selimAP/weathergotchi">⇨THE PROJECT⇦</a>
+                    </div>
+                    
+                    <div onclick="pp()" class="main-content-footer-pp">
+                        <h5>Privacy Policy</h5>
+                    </div>
+
+                    <div onclick="tos()" class="main-content-footer-tos">
+                        <h5>Terms of Service</h5>
+                    </div>
+
+                    <div class="copyright">
+                        <p style="margin-top: 20px;">Copyright © 2024 Kevin Chromik & selimAP. All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="tama-buttons">
+                <button onclick="showStats()">⚪</button>
+                <button onclick="showMain()">⚪</button>
+                <button onclick="showFooter()" >⚪</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

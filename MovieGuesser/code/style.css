@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+}
+
+.content{
+    height: 100vh;
+    width: 100%;
+}
+.top p {
+    position: absolute;
+    left: 50%;
+    top: 5%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 20px;
+    font-weight: 450;
+}
+.top h2{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    font-weight: bolder;
+    background: white;
+    border-radius: 100%;
+    height: 70px;
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.movies {
+    display: flex;
+    justify-content: center;
+}
+
+.movie {
+    margin: 0 20px;
+}
+
+#result {
+    margin-top: 20px;
+}
+
+.movie-1, .movie-2{
+    background: rgb(0, 0, 0);
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.movie-cover-1, .movie-cover-2 {
+    opacity: .8;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 0;
+}
+
+
+#movie-title-1, #movie-title-2{
+    color: white;
+    font-size: 40px;
+    z-index: 10;
+}
+
+#awards-movie-1, #awards-movie-2{
+    color: white;
+    font-size: 60px;
+    font-weight: bold;
+}
+
+
+.movie-cover-2 button{
+    background: none;
+    border: 2px solid white;
+    height: 44px;
+    width: 200px;
+    margin: 5px;
+    border-radius: 3px;
+    transition: .2s;
+    z-index: 10;
+    color: rgb(255, 255, 255);
+    font-size: 21px;
+    font-weight: bold;
+}
+.movie-cover-2 button:hover{
+    background: rgb(255, 255, 255);
+    color: black;
+    cursor: pointer;
+}

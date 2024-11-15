@@ -19,8 +19,6 @@ WeatherGotchi is a Tamagotchi-inspired weather assistant that displays current w
 - Planned Feature: Associating different animals with specific weather conditions was not implemented due to time constraints.  
 - Issues with displaying pressure and altitude correctly.  
 
-📌 **Live Demo**: [WeatherGotchi](https://weathergotchi.fun/)  
-
 ---
 
 ### 2. **AllergyShield** 🛡️  
